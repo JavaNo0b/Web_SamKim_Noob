@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼김화로구이 내부시설</title>
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="내부시설.css">
+    <script>
+        function changeImgHall() {
+            document.getElementById("img").src = "./img/삼김 홀.jpg";
+            document.querySelector('#hall').style.background="black";
+            document.querySelector('#room').style.background="gray";
+        }
+        function changeImgRoom() {
+            document.getElementById("img").src = "./img/삼김 룸.jpg";
+            document.querySelector('#room').style.background="black";
+            document.querySelector('#hall').style.background="gray";
+        }
+    </script>
+</head>
+<body>
+    <div class="body">
+        <div class="header">
+            <h1><a href="삼김.html">三金화로구이</a></h1>
+            <ul>
+                <li><a href="메뉴.html">메뉴</a></li>
+                <li><a href="내부시설.html" style="color: brown; font-size: larger;">내부시설</a></li>
+                <li><a href="이용안내.html">이용안내</a></li>
+                <li><a href="오시는길.html">오시는길</a></li>
+                <li><a href="예약문의.html">예약문의</a></li>
+            </ul>
+        </div>
+        <div class="article">
+            <input id="hall" type="button" value="홀" onclick="changeImgHall()">
+            <input id="room" type="button" value="룸" onclick="changeImgRoom()">
+            <img id="img" src="">
+        </div> 
+        <div class="footer">
+            <img src="./img/삼김로고.PNG">
+        </div>   
+    </div>
+</body>
+</html>

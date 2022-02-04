@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼김화로구이 예약문의</title>
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="예약문의.css">
+    <script>
+        function checkInfo(){
+            var name = document.getElementById( 'name' ).value;
+            var tel = document.getElementById( 'tel' ).value;
+            var people = document.getElementById( 'people' ).value;
+            var date = document.getElementById( 'date' ).value;
+            var time = document.getElementById( 'time' ).value;
+
+            var checkName = "예약자명 : " + name;
+            var chaeckTel = "연락처 : " + tel;
+            var checkPeo = "인원수 : " + people + "명";
+            var checkDate = "날짜, 시간 : " + date + "/" + time;
+
+            alert(checkName+'\n'+chaeckTel+'\n'+checkPeo+'\n'+checkDate+'\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\n'+ '기입 정보가 맞다면 확인을 눌러주십시오.'+'\n'+'(재입력을 원하시면 ESC를 누르십시오.)'+ '\n\n\n' + '*확인을 누르실 경우 예약완료 / 메인 페이지로 이동됩니다*');
+        }
+    </script>
+</head>
+<body>
+    <div class="body">
+        <div class="header">
+            <h1><a href="삼김.html">三金화로구이</a></h1>
+            <ul>
+                <li><a href="메뉴.html">메뉴</a></li>
+                <li><a href="내부시설.html">내부시설</a></li>
+                <li><a href="이용안내.html">이용안내</a></li>
+                <li><a href="오시는길.html">오시는길</a></li>
+                <li><a href="예약문의.html" style="color: brown; font-size: larger;">예약문의</a></li>
+            </ul>
+        </div>
+        <div class="article">
+            <form action="./예약문의.html" method="POST" onsubmit="checkInfo();">
+                <fieldset>
+                    <legend>예약정보</legend>
+                    예약자명 : <input id="name" type="text" placeholder="홍길동"><br>
+                    연락처 : <input id="tel" type="tel" placeholder="010-1234-5678"><br>
+                    인원 : <input id="people" type="text" list="num" >
+                            <datalist id="num">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                                <option value="6">
+                                <option value="7">
+                                <option value="8">
+                            </datalist><br>
+                    날짜 : <input id="date" type="date" value="2021-01-01"><input id="time" type="time" value="21:00">
+                </fieldset>
+                <br>
+                <input type="submit" value="확인">
+                <input type="reset" value="취소">
+            </form>
+        </div>
+        <div class="footer">
+            <img src="./img/삼김로고.PNG">
+        </div>
+    </div>
+</body>
+</html>

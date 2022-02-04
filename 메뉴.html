@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼김화로구이 메뉴</title>
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="메뉴.css">
+    <script>
+        function changeLeft(){
+            if(document.getElementById("img").src = "./img/한우.jpeg"){
+                document.getElementById("img").src = "./img/런치2.jpeg";
+            }
+            else if(document.getElementById("img").src = "./img/한돈.jpeg"){
+                document.getElementById("img").src = "./img/한우.jpeg";
+            }
+            else if(document.getElementById("img").src = "./img/식사.jpeg"){
+                document.getElementById("img").src = "./img/한돈.jpeg";
+            }
+            else if(document.getElementById("img").src = "./img/주류.jpeg"){
+                document.getElementById("img").src = "./img/식사.jpeg";
+            }
+            else if(document.getElementById("img").src = "./img/런치1.jpeg"){
+                document.getElementById("img").src = "./img/주류.jpeg";
+            }
+            else if(document.getElementById("img").src = "./img/런치2.jpeg"){
+                document.getElementById("img").src = "./img/런치1.jpeg";
+            }
+        }
+        function changeRight(){
+            if(document.getElementById("img").src = "./img/런치2.jpeg"){
+                document.getElementById("img").src = "./img/한우.jpeg";
+            }
+            else if(document.getElementById("img").src = "./img/한우.jpeg"){
+                document.getElementById("img").src = "./img/한돈.jpeg";
+            }
+            else if(document.getElementById("img").src = "./img/한돈.jpeg"){
+                document.getElementById("img").src = "./img/식사.jpeg";
+            }
+            else if(document.getElementById("img").src = "./img/식사.jpeg"){
+                document.getElementById("img").src = "./img/주류.jpeg";
+            }
+            else if(document.getElementById("img").src = "./img/주류.jpeg"){
+                document.getElementById("img").src = "./img/런치1.jpeg";
+            }
+            else if(document.getElementById("img").src = "./img/런치1.jpeg"){
+                document.getElementById("img").src = "./img/런치2.jpeg";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="body">
+        <div class="header">
+            <h1><a href="삼김.html">三金화로구이</a></h1>
+            <ul>
+                <li><a href="메뉴.html" style="color: brown; font-size: larger;">메뉴</a></li>
+                <li><a href="내부시설.html">내부시설</a></li>
+                <li><a href="이용안내.html">이용안내</a></li>
+                <li><a href="오시는길.html">오시는길</a></li>
+                <li><a href="예약문의.html">예약문의</a></li>
+            </ul>
+        </div>
+        <div class="article">
+            <input type="button" value="&lt;" onclick="changeLeft();">
+            <input type="button" value="&gt;" onclick="changeRight();">
+            <img id="img" src="./img/한우.jpeg">
+        </div>
+        <div class="footer">
+            <img src="./img/삼김로고.PNG">
+        </div>
+    </div>
+</body>
+</html>

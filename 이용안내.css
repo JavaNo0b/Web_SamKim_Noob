@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+.article ol{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.article{
+    background: none;
+    margin-top: 0px;
+}
+.article .use{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: x-large;
+}
