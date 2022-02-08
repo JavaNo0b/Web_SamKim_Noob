@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 
 .article{
-    background-image: url(./img/한지.jpg);
+    background-image: url(한지.jpg);
 }
 fieldset, legend, input{
     background: white;
