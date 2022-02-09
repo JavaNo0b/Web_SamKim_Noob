@@ -4,7 +4,7 @@ body{
 .body{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(https://scontent-ssn1-1.xx.fbcdn.net/v/t1.18169-9/13495222_946498288782318_1719130170011996477_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=LYMDmuoDScUAX_BBR6d&_nc_ht=scontent-ssn1-1.xx&oh=00_AT_etv8p78Wj7m8UeQ6fOX7PN-CL6Mn3rKfVvTu_bUYq9w&oe=6228D3EC);
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://scontent-ssn1-1.xx.fbcdn.net/v/t1.18169-9/13495222_946498288782318_1719130170011996477_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=LYMDmuoDScUAX_BBR6d&_nc_ht=scontent-ssn1-1.xx&oh=00_AT_etv8p78Wj7m8UeQ6fOX7PN-CL6Mn3rKfVvTu_bUYq9w&oe=6228D3EC");
 }
 
 .header{
